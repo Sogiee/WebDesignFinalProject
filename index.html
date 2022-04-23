@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Animal Trivia by Sogiee</title>
-    
-    <link rel="stylesheet" href="stylesheet.css"/>
-    <!--js sheet link need-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animal Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
-    Animal Trivia!
+
+<body class="wallpaper">
+    <div class="container">
+        <div class="row">
+            <h1>Animal Trivia</h1>
+        </div>
+        <br>
+
+        <div class="row timer">Time Remaining: 10 Seconds</div>
+        <br>
+        <div class="row start-button">
+            <button class="start">Start</button>
+        </div>
+        <div class="row question"></div>
+        <br>
+        <div class="row results"></div>
+        <br>
+        <div class="gif-screen">
+        </div>
+        <br>
+        <div class="row scoreboard">
+        </div>
+        <br>
+        <div class="row restart-button">
+            <button class="restart">Restart</button>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+
 </body>
+
 </html>
