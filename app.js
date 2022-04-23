@@ -65,7 +65,6 @@ $(document).ready(function() {
             }
 
             $(".buttons").on("click", function() {
-                console.log($(this).attr("value"));
                 console.log(answers[questionNumber]);
                 if ($(this).val() === answers[questionNumber]) {
                     clearInterval(intervalId);
