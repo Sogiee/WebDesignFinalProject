@@ -25,27 +25,15 @@ $(document).ready(function() {
         answerChoices: ["A. Koala", "B. Wombat", "C. Platypus", "D. House Cat"],
         answer: "B. Wombat",
     }
-    var timeLeft = 3; // # of seconds left
-    var losses = 0; // # of wrong answers
-    var wins = 0; // # of right answers
-    var timesUp = 0; // the number of non-answered
-    var questionNumber = 0; // the number of the question
+    var timeLeft = 3;
+    var losses = 0;
+    var wins = 0;
+    var timesUp = 0;
+    var questionNumber = 0;
 
     var questions = [q0.question, q1.question, q2.question, q3.question, q4.question];
     var answerOptions = [q0.answerChoices, q1.answerChoices, q2.answerChoices, q3.answerChoices, q4.answerChoices];
     var answers = [q0.answer, q1.answer, q2.answer, q3.answer, q4.answer]
-
-    function winPage() {
-        $(".gif-screen").html("<img src='https://media.giphy.com/media/pHZdGyFNp5sUXq4jp5/giphy-downsized-large.gif' class='winGif'>");
-    }
-
-    function losePage() {
-        $(".gif-screen").html("<img src='https://media.giphy.com/media/5bgS90uCmWoWp2hBvj/giphy.gif' class='loseGif'>");
-    }
-
-    function endPage() {
-        $(".gif-screen").html("<img src='https://media.giphy.com/media/ONuQzM11fjvoY/giphy.gif' class='endGif'>");
-    }
 
     var intervalId;
 
@@ -124,6 +112,18 @@ $(document).ready(function() {
         timesUp = 0;
         questionNumber = 0;
         game();
+    }
+
+       function winPage() {
+        $(".gif-screen").html("<img src='https://media.giphy.com/media/pHZdGyFNp5sUXq4jp5/giphy-downsized-large.gif' class='winGif'>");
+    }
+
+    function losePage() {
+        $(".gif-screen").html("<img src='https://media.giphy.com/media/5bgS90uCmWoWp2hBvj/giphy.gif' class='loseGif'>");
+    }
+
+    function endPage() {
+        $(".gif-screen").html("<img src='https://media.giphy.com/media/ONuQzM11fjvoY/giphy.gif' class='endGif'>");
     }
 
     $(".restart").hide();
